@@ -1,0 +1,6 @@
+void deleteTask({required String taskId}) {
+  setState(() {
+    tasksList.removeWhere((task) => task.id == taskId);
+  });
+}
+
